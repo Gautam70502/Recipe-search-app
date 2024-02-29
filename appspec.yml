@@ -1,0 +1,17 @@
+version: 0.0
+
+os: linux
+
+files:
+  - source: /
+    destination: /demp-app
+
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependency.sh
+      timeout: 300
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/start_server.sh
+      timeout: 300
+      runas: ec2-user
