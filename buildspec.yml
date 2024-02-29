@@ -7,8 +7,7 @@ phases:
       commands:
         - echo "Installing npm packages"
         - npm install -g 
-        = echo "npm package installation completed !!!"
-  
+        = echo "npm package installation completed !!!" 
    pre_build:
       commands:
         - echo "Installing project dependency"
