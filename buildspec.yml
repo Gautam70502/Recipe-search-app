@@ -13,13 +13,11 @@ phases:
         - echo "Installing project dependency"
         - npm install
         - echo "Project Dependency installed !!!"
-
    build:
       commands:
         - echo "Building Application"
         - npm run build
         - echo "Build Successful !!!"
-
 artifacts:
   files: '**/*'
   discard-paths: yes        
