@@ -7,17 +7,20 @@ phases:
       commands:
         - echo "Installing npm packages"
         - npm install -g 
-        = echo "npm package installation completed !!!" 
+        - echo "npm package installation completed !!!" 
+        
    pre_build:
       commands:
         - echo "Installing project dependency"
         - npm install
         - echo "Project Dependency installed !!!"
+        
    build:
       commands:
         - echo "Building Application"
         - npm run build
         - echo "Build Successful !!!"
+        
 artifacts:
   files: '**/*'
   discard-paths: yes        
