@@ -9,7 +9,7 @@ const Navbar =() => {
     let [isButtonClicked, SetisButtonClicked] = useState(false);
     // Setsearch(search);
     const myInlineStyle = {
-        color: 'White',
+        color: 'Red',
         fontSize: '32px',
         fontWeight: 'bold',
     };
@@ -42,7 +42,7 @@ const Navbar =() => {
         <>
             <div>
                 <nav className="navbar navbar-expand-lg navbar navbar-dark bg-primary">
-                    <a className="navbar-brand" style={myInlineStyle} href="http://localhost:3000/">Recipeze</a>
+                    <a className="navbar-brand" style={myInlineStyle} href="http://localhost:3000/">Recipezes</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
